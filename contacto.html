@@ -5,25 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/b546633b3b.js" crossorigin="anonymous"></script>
 </head>
 <body>
     
     <header>
 
-        <nav class="responsive-nav">
-            <div class="logo">
-                <h2>MILACORI</h2>
-            </div>
-            <ul>
+        <div class="responsive-cont">
+            <nav class="responsive-nav">
+                <div class="logo">
+                    <a href="#">MILACORI</a>
+                </div>
+                <a href="#" class="fa-solid fa-bars" id="buttonOpenCloseMenu"></a>
+            </nav>
+    
+            <ul id="menu-mobile-items" class="menu-mobile-closed">
                 <li><a href="index.html">Joyeria</a></li>
                 <li><a href="sobre-mi.html">Sobre Mi</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
-        </nav>
+        </div>
 
         <nav class="desktop-nav">
             <div class="logo">
-                <h2>MILACORI</h2>
+                <h2><a href="#">MILACORI</a></h2>
             </div>
             <ul>
                 <li><a href="index.html">Joyeria</a></li>
@@ -34,42 +47,40 @@
 
     </header>
 
-    <h1>CONTACTO</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio mollitia earum esse enim. Veniam, rerum! Voluptatibus temporibus molestias sed aperiam, hic iusto nulla quae, vero minus fugit cumque ipsam cum!</p>
+    <div class="titulo-contacto">
+        <h1>CONTACTO</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio mollitia earum esse enim. Veniam, rerum! Voluptatibus temporibus molestias sed aperiam, hic iusto nulla quae, vero minus fugit cumque ipsam cum!</p>
+    </div>
 
-    <div class="form-cont">
-        <form action="" class="form">
-            <input type="text">
-            <input type="mail">
-            <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
-            <button>
-                <span>Enviar</span>
-            </button>
-        </form>
-        <div class="cont-data">
-            <h4>Contáctame</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis vel, totam ullam amet porro hic, aliquid commodi fuga nobis soluta numquam voluptas nam. Ratione voluptatibus autem praesentium eum corporis.</p>
-            <p>Sigueme en:</p>
-            <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Instagram</a></li>
-            </ul>
+    <div class="contacto-cont">
+        <div class="form-cont">
+            <form action="" class="form">
+                <input type="text" placeholder="Nombre">
+                <input type="mail" placeholder="Mail">
+                <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                <input type="submit" class="enviar">
+            </form>
+            
+            <div class="data-cont">
+                <h4>Contáctame</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum officiis vel, totam ullam amet porro hic, aliquid commodi fuga nobis soluta numquam voluptas nam. Ratione voluptatibus autem praesentium eum corporis.</p>
+                <p>Sigueme en:</p>
+                <ul>
+                    <li><a href="#">_Facebook</a></li>
+                    <li><a href="#">_Twitter</a></li>
+                    <li><a href="#">_Instagram</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 
     <footer>
-        <div class="footer-title">
-            <h4>Bienvenidos a mi Web</h4>
-            <h1>JOYAS EXCLUCIVAS HECHAS A MANO</h1>
-        </div>
-        <div class="footer-btn">
-            <button>Contáctame</button>
-        </div>
         <div class="footer-footer">
             <p>© 2021 Joyería hecha a mano. Milacori joyas</p>
         </div>
    </footer>
+
+   <script src="main.js"></script>
 
 </body>
 </html>
